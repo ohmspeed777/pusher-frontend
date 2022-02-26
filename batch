@@ -1,0 +1,4 @@
+curl -H "Content-Type: application/json" \
+     -H "Authorization: Bearer FA07044558EDB6307EF4E4D15227D5A1F8E2D20ECF1F2E4C65A8781C0FBA4CB3" \
+     -X POST "https://1038202c-9ec2-498d-b25b-a0b3d71c4c52.pushnotifications.pusher.com/publish_api/v1/instances/1038202c-9ec2-498d-b25b-a0b3d71c4c52/publishes" \
+     -d '{"interests":["hello"],"web":{"notification":{"title":"Hello","body":"Hello, world!"}}}'

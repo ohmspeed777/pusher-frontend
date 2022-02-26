@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react';
+import { Button, CustomProvider } from 'rsuite';
+import 'rsuite/dist/rsuite.min.css';
+import Chat from './pages/Chat';
+import Notification from './pages/Notification';
 
-function App() {
+const App = () => {
+  useEffect(() => {}, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CustomProvider theme="dark">
+      <div>
+        App
+        <br />
+        {/* <Chat /> */}
+        <Notification />
+      </div>
+    </CustomProvider>
   );
-}
+};
 
 export default App;
