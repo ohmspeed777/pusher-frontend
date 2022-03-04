@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button, CustomProvider } from 'rsuite';
 import 'rsuite/dist/rsuite.min.css';
-import Chat from './pages/Chat';
 import Notification from './pages/Notification';
 
 const App = () => {
